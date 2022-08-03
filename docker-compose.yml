@@ -1,9 +1,9 @@
 version: '3'
 services:
   php:
-    container_name: tokuoka
+    container_name: mysite
     build: ./
     volumes:
-      - ./dist:/var/www/html
+      - ./public:/var/www/html
     ports:
       - 8090:80
