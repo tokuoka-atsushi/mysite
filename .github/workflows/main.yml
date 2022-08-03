@@ -1,15 +1,14 @@
 name: Deploy
 on: 
   push:
-    branches: [develop]
+    branches: [ develop ]
 jobs:
   web-deploy:
     name: FTP-Deploy-Action-tokuoka.xenda.jp
     runs-on: ubuntu-latest
     steps:
-
       - name: get lastest code
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v2
 
       - name: sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.0
