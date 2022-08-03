@@ -4,6 +4,6 @@ services:
     container_name: tokuoka
     build: ./
     volumes:
-      - ./docs:/var/www/html
+      - ./dist:/var/www/html
     ports:
       - 8090:80
