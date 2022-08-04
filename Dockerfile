@@ -1,4 +1,5 @@
 FROM php:8.0-apache
+RUN apt-get update
 COPY apache2.conf /etc/apache2/apache2.conf
-RUN a2enmod cgi include
 COPY ./public /var/www/html
+WORKDIR /var/www/html
